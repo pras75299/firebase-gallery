@@ -1,32 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
 :root{
-  --primary: #efb6b2;
-  --secondary: #4e4e4e;
-  --error: #ff4a4a;
+  --primary: #10B981;
+  --secondary: #047857;
+  --error: #DC2626;
 }
 
 /* base styles & title */
 body{
-  font-family: "Noto Serif";
+  font-family: 'Roboto', sans-serif;
   color: var(--secondary);
+  background-color: #ECFDF5;
 }
 .App{
   max-width: 960px;
   margin: 0 auto;
 }
 .title h1{
-  color: var(--primary);
-  font-size: 1.2rem;
-  letter-spacing: 2px;
-  font-weight: normal;
+  color: var(--secondary);
+  font-size: 2rem;
+  font-weight: 900;
 }
 .title h2, .title p{
   text-align: center;
 }
 .title h2{
-  margin-top: 60px;
+  margin-top: 50px;
   font-size: 2.6rem;
+  margin-bottom: 1rem;
 }
 
 /* upload form styles */
@@ -41,15 +42,16 @@ label input{
 }
 label{
   display: block;
-  width: 30px;
-  height: 30px;
-  border: 1px solid var(--primary);
+  width: 50px;
+  height: 50px;
+  border: 3px solid var(--primary);
   border-radius: 50%;
   margin: 10px auto;
-  line-height: 30px;
+  line-height: 50px;
   color: var(--primary);
   font-weight: bold;
-  font-size: 24px;
+  font-size: 45px;
+  cursor: pointer;
 }
 label:hover{
   background: var(--primary);
@@ -61,6 +63,8 @@ label:hover{
 }
 .error{
   color: var(--error);
+  font-family: inherit;
+  font-size: 1rem;
 }
 
 /* progress bar styles */
