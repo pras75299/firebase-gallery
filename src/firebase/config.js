@@ -3,12 +3,12 @@ import firebase from 'firebase/app';
 import 'firebase/storage';
 import 'firebase/firestore';
 let firebaseConfig = {
-    apiKey: `${process.env.local.FIREBASE_API_KEY}`,
+    apiKey: `${process.env.FIREBASE_API_KEY}`,
     authDomain: "reactimagegallery-a4230.firebaseapp.com",
     projectId: "reactimagegallery-a4230",
     storageBucket: "reactimagegallery-a4230.appspot.com",
     messagingSenderId: "951983162716",
-    appId: `${process.env.local.FIREBASE_APPID}`
+    appId: `${process.env.FIREBASE_APPID}`
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
